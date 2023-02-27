@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+
+html{
+    font-size: 62.4%;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    background-color: black;
+    z-index: 1000;
+}
+
+header nav a{
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+
+
+.btn--primary{
+    background-color: white;
+}
+
+.btn--secondary{
+    color: white;
+    background-color: rgb(0, 119, 255);
+}
+
+.btn{
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+}
+
+.btn--hero{
+    text-decoration: none;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: crimson;
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+.btn--hero:hover{
+    transform: scale(1.1);
+}
+
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    box-shadow: 0 .5rem 20rem rgba(0, 0, 0, 0.3) inset;
+    height: 100vh;
+}
+
+
+
+.menu-toggle{
+    display: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inicio .content p{
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+.inicio .content span{
+    display: flex;
+    justify-content: center;
+}
+.content span img{
+    width: 40vw;
+}
+
+.inicio .image img{
+    width: 40vw;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform:translateY(0rem);   
+    }
+    50%{
+        transform: translateY(2.5rem);
+        transform: skewY(5deg);
+    }
+}
+
+.inicio .content h3{
+    color: crimson;
+    font-size: 5.5rem;
+}
+
+.suscripcion{
+    background-image: url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+}
+
+.suscripcion__content{
+    margin-top: 2rem;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 1s;
+}
+
+.sub{
+    display: flex;
+    gap: 3rem;
+    height: 50%;
+
+}
+
+.sub-card{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+    color: whitesmoke;
+    gap: 2.5rem;
+}
+
+.sub-btn{
+    width: 50%;
+    border-radius: 50px;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub-btn--individual{
+    color: white;
+    background-color: crimson;
+}
+
+.sub-btn--familiar{
+    color: white;
+    background-color: darkcyan;
+}
+
+
+.suscripcion__content h3{
+    font-weight: 400;
+    color: crimson;
+    font-size: 3rem;
+}
+
+.suscripcion__content p{
+    font-weight: lighter;
+    text-align: center;
+    color: whitesmoke;
+    padding: 0 10rem;
+}
+
+.btn--indiv{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: crimson;
+}
+
+.btn--family{
+    color: crimson;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.beneficios h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.beneficios__col{
+    font-family: 'Roboto Slab';
+    padding: 0 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.beneficios__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios h3{
+    font-size: 6rem;
+}
+.ofertas{
+    box-shadow: 5px 5px 5rem 5rem inset rgba(0, 0, 0, 0.5);
+    background-image: url(../assets/bluebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.ofertas>h3{
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+.ofertas__juegos{
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    gap: 10px;
+}
+
+.card h3{
+    font-weight: bold;
+}
+
+.card img{
+    width: 250px;
+    height: 300px;
+}
+
+.card p{
+    font-weight: 200;
+    font-size: 90%;
+    text-align: left;
+}
+
+.card h6{
+    font-size: 2rem;
+    color: #c1deff;
+}
+footer{
+    padding: 2rem;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div a{
+    color: whitesmoke;
+}
+
+@media (max-width:768px){
+    header{
+        padding: 0 1rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+    .menu-toggle input[type="checkbox"]{
+        display: none;
+    }
+    
+    .fa-bars{
+        color: white;
+    }
+    .inicio{
+        flex-flow: column;
+    }
+}
