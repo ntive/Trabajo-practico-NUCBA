@@ -13,20 +13,29 @@
         <span><img src="assets/asus.png" alt="LOGO" width="70px"></span>
         <nav>
             <a href="#" class="nav-item">Inicio</a>
-            <a href="#" class="nav-item">Plan Mensual</a>
+            <a href="#beneficios" class="nav-item">Beneficios</a>
+            <a href="#plan" class="nav-item">Plan Mensual</a>
             <a href="#" class="nav-item"><button class="btn btn--primary">Registrarse</button></a>
             <a href="#" class="nav-item"><button class="btn btn--secondary">Iniciar sesion</button></a>
         </nav>
-        <div class="menu-toggle">
-            <label for="burger-menu"><input type="checkbox"></label>
-            <i id="burguer-menu" class="fa-solid fa-bars"></i>
+        <label for="burguer-menu"><i class="fa-solid fa-bars"></i></label>
+
+        <input id="burguer-menu" name="burguer-menu" type="checkbox">
+        <div class="menu">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Beneficios</a></li>
+                <li><a href="">Plan Mensual</a></li>
+                <li><a href="">Registrarse</a></li>
+                <li><a href="">Iniciar Sesion</a></li>
+            </ul>
         </div>
     </header>
 
     <section class="inicio" id="inicio">
         <div class="content">
             <span><img src="assets/logo.png" width="100%" alt=""></span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ipsum eveniet tempore assumenda voluptas perspiciatis debitis possimus excepturi totam. Facere maiores impedit deleniti nobis illum esse similique tempore porro ut.</p>
+            <p>Marvel's Spider-Man es un videojuego de acción y aventura desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment. En el juego, los jugadores asumen el papel del superhéroe Spider-Man mientras navegan por la ciudad de Nueva York y luchan contra una variedad de enemigos y villanos icónicos de Marvel Comics.</p>
             <a href="#" class="btn--hero">Mas detalles</a>
         </div>
         <div class="image">
@@ -35,31 +44,26 @@
     </section>
 
 
-    <div class="ofertas">
-        <div class="beneficios">
-            <h2>Nuestros Beneficios</h2>
+    <div class="ofertas" id="beneficios">
+        <h2>Nuestros Beneficios 🎈</h2>
+        <div class="beneficios__wrapper">
             <div class="beneficios__col">
-                <img src="assets/twitch.png" width="30%" alt="">
-                <div class="beneficios__text">
-                    <h3>Transmite tus mejores momentos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad natus autem vitae dolores voluptatem perspiciatis officia quibusdam eligendi ducimus expedita illum ratione aut atque sapiente voluptates aspernatur id, sed in?</p>
-                </div>
+                <img src="assets/twitch.png" width="250px" alt="">
+                <h3>Comparte tus momentos favoritos</h3>
+                <p>¡Transmiti esos momentos que mas disfrutas con la integracion de Twitch!</p>
             </div>
             <div class="beneficios__col">
-                <img src="assets/joystick.png" width="30%" alt="">
-                <div class="beneficios__text">
-                    <h3>Disfruta de los mejores titulos</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad natus autem vitae dolores voluptatem perspiciatis officia quibusdam eligendi ducimus expedita illum ratione aut atque sapiente voluptates aspernatur id, sed in?</p>
-                </div>
+                <img src="assets/joystick.png" width="300px" alt="">
+                <h3>Comparte tus momentos favoritos</h3>
+                <p>¡Disfruta de un gran y variado catalogo de juegos incluyendo las ultimas entregas! y a excelentes precios</p>
             </div>
             <div class="beneficios__col">
-                <img src="assets/servicio tecnico.png" width="30%" alt="">
-                <div class="beneficios__text">
-                    <h3>Soporte tecnico 24/7</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad natus autem vitae dolores voluptatem perspiciatis officia quibusdam eligendi ducimus expedita illum ratione aut atque sapiente voluptates aspernatur id, sed in?</p>
-                </div>
+                <img src="assets/servicio tecnico.png" width="300px" alt="">
+                <h3>Servicio Tecnico 24/7</h3>
+                <p>Tenes problemas? Estamos para servite.Conta con un excelente servicio tecnico solo para vos donde y cuando lo necesites</p>
             </div>
         </div>
+
         <h3>¡Ofertas Exclusivas! 🎮</h3>
         <div class="ofertas__juegos">
             <div class="card">
@@ -104,42 +108,36 @@
         </div>
     </div>
 
-    <section>
-        <div class="suscripcion">
-            <div class="suscripcion__content">
-                <h3><img src="assets/asus.png" alt=""></h3>
-                <div class="sub">
-                    <div class="sub-card">
-                        <h3>Plan indivual</h3>
-                        <ul>
-                            <li>Juega en un dispositivo</li>
-                            <li>Puedes jugar en solo un lugar</li>
-                            <li>Velocidad ping limitada</li>
-                            <li>Accede al juego del mes</li>
-                            <li>miles de ofertas</li>
-                        </ul>
-                        <a href="" class="sub-btn sub-btn--individual">individual</a>
-                    </div>
-                    <div class="sub-card">
-                        <h3>Plan Familiar</h3>
-                        <ul>
-                            <li>Juega todos los dispositivos</li>
-                            <li>Puedes jugar en solo todas partes</li>
-                            <li>Velocidad ping ilimitada</li>
-                            <li>Accede al juego del mes</li>
-                            <li>Miles de ofertas</li>
-                        </ul>
-                        <a href="#" class="sub-btn sub-btn--familiar">Familiar</a>
-                    </div>
-                </div>
-                <a href="#" class="btn btn--indiv">Comprar plan individual</a>
-                <a href="#" class="btn btn--family">Comprar plan familiar</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusamus neque provident esse, tenetur commodi magni quas totam velit ex laborum doloremque temporibus inventore, nostrum suscipit architecto! Veritatis, dolor minus?</p>
+    <section class="section__sub">
+        <img src="assets/asus.png" width="100px" alt="">
+        <div class="sub__wrapper">
+            <div class="sub__card">
+                <h4>Suscripcion Individual</h4>
+                <ul>
+                    <li>Juega en un dispositivo</li>
+                    <li>Puedes jugar en solo un lugar</li>
+                    <li>Velocidad ping limitada</li>
+                    <li>Accede a 1 de los mejores<br>juegos del mes</li>
+                    <li>Miles de ofertas</li>
+                    <hr>
+                    <a href="" class="btn--individual">Comprar</a>
+                </ul>
+            </div>
+            <div class="sub__card">
+                <h4>Suscripcion Plus</h4>
+                <ul>
+                    <li>Juega en todos los dispositivos</li>
+                    <li>Juega en cualquier lugar</li>
+                    <li>Velocidad ping ilimitada</li>
+                    <li>Accede a 3 de los mejores<br>juegos del mes</li>
+                    <li>Miles de ofertas</li>
+                    <hr>
+                    <a href="" class="btn--plus">Comprar</a>
+                </ul>
             </div>
         </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit excepturi quod quasi placeat, optio doloremque tenetur suscipit ipsam repudiandae dicta?</p>
     </section>
-
-
     <footer>
         <div>
             <a href="">Inicio</a>

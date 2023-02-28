@@ -15,6 +15,7 @@ body{
 html{
     font-size: 62.4%;
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -35,7 +36,13 @@ header nav a{
     text-decoration: none;
 }
 
+header input[type="checkbox"]{
+    display: none;
+}
 
+.menu,label{
+    display: none;
+}
 
 .btn--primary{
     background-color: white;
@@ -87,13 +94,17 @@ header nav a{
 
 
 
+
+
 .menu-toggle{
     display: none;
 }
 .content{
+    width: 50vw;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 700px;
 }
 
 .inicio .content p{
@@ -130,115 +141,43 @@ header nav a{
     font-size: 5.5rem;
 }
 
-.suscripcion{
-    background-image: url(../assets/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: flex-end;
+
+.ofertas__juegos{
+    padding-bottom: 100px;
 }
 
-.suscripcion__content{
-    margin-top: 2rem;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 1s;
-}
-
-.sub{
-    display: flex;
-    gap: 3rem;
-    height: 50%;
-
-}
-
-.sub-card{
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
-    border-radius: 50px;
-    backdrop-filter: blur(50px);
-    color: whitesmoke;
-    gap: 2.5rem;
-}
-
-.sub-btn{
-    width: 50%;
-    border-radius: 50px;
-    padding: 1rem;
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.sub-btn--individual{
-    color: white;
-    background-color: crimson;
-}
-
-.sub-btn--familiar{
-    color: white;
-    background-color: darkcyan;
-}
-
-
-.suscripcion__content h3{
-    font-weight: 400;
-    color: crimson;
+.ofertas>h2{
+    padding-top: 60px;
     font-size: 3rem;
+    opacity: 90%;
+    margin-bottom: 35px;
 }
 
-.suscripcion__content p{
-    font-weight: lighter;
+.ofertas>h3{
+    font-size: 2.3rem;
+    opacity: 80%;
     text-align: center;
-    color: whitesmoke;
-    padding: 0 10rem;
+    margin-bottom: 60px;
 }
 
-.btn--indiv{
-    text-decoration: none;
-    color: whitesmoke;
-    background-color: crimson;
-}
-
-.btn--family{
-    color: crimson;
-    border: 1px solid;
-    text-decoration: none;
-}
-
-.beneficios h2{
-    font-size: 4rem;
-    text-align: center;
+.beneficios__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .beneficios__col{
-    font-family: 'Roboto Slab';
-    padding: 0 12%;
+    text-align: center;
+    width: 25%;
     display: flex;
-    flex-direction: row;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 
-.beneficios__text{
-    display: flex;
-    flex-direction: column;
-}
-
-.beneficios h3{
-    font-size: 6rem;
-}
 .ofertas{
     box-shadow: 5px 5px 5rem 5rem inset rgba(0, 0, 0, 0.5);
     background-image: url(../assets/bluebg.jpg);
@@ -247,9 +186,8 @@ header nav a{
     padding: 1rem;
 }
 
-.ofertas>h3{
-    font-size: 3rem;
-    margin-left: 5%;
+.ofertas h2{
+    text-align: center;
 }
 
 .ofertas__juegos{
@@ -287,6 +225,65 @@ header nav a{
     font-size: 2rem;
     color: #c1deff;
 }
+
+
+.section__sub{
+    background-blend-mode: darken;
+    background-image: url("../assets/banner.jpg");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.section__sub > img{
+    display: block;
+    margin: auto;
+}
+
+.sub__wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub__card{
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(50px);
+}
+
+.sub__card>h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub__card>ul li{
+    font-weight: 200;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+.btn--individual{
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px;
+    color: crimson;
+    background-color: whitesmoke;
+}
+
+.btn--plus{
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: crimson;
+}
+
 footer{
     padding: 2rem;
     background-color: #181818;
@@ -304,25 +301,73 @@ footer div a{
 }
 
 @media (max-width:768px){
+    label{
+        display: block;
+    }
+    header input:checked ~ .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    .menu ul{
+        padding: 30px;
+        list-style: none;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .menu ul a{
+        cursor: pointer;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .beneficios__col>img{
+        width: 100%;
+    }
+
+    .sub__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sub__card{
+        margin: 0 auto;
+
+    }
+
     header{
-        padding: 0 1rem;
+        padding: 0;
     }
 
     nav{
         display: none;
     }
 
-    .menu-toggle{
-        display: block;
-    }
-    .menu-toggle input[type="checkbox"]{
-        display: none;
-    }
     
     .fa-bars{
         color: white;
     }
     .inicio{
         flex-flow: column;
+    }
+}
+
+@media(max-width:400px){
+    .beneficios__wrapper{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .beneficios__col{
+        margin: 20px;
+    }
+
+    .beneficios__col>p{
+        display: none;
     }
 }
