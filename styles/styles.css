@@ -40,7 +40,18 @@ header input[type="checkbox"]{
     display: none;
 }
 
-.menu,label{
+.menu{
+    backdrop-filter: blur(50px);
+    transform: translateY(-200%);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    top: 100%;
+}
+
+label{
     display: none;
 }
 
@@ -305,13 +316,9 @@ footer div a{
         display: block;
     }
     header input:checked ~ .menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: green;
-        position: absolute;
-        top: 100%;
-        width: 100%;
+        transform: translateY(0);
+        transition: transform 0.5s;
+
     }
 
     .menu ul{
