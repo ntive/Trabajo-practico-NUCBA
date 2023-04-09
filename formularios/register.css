@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Open Sans';
+}
+
+
+article{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1320%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1321)'%3e%3c/rect%3e%3cpath d='M1313.8385126038336 25.92486784972185L1185.1272706312657 48.62013252998139 1207.8225353115254 177.33137450254918 1336.533777284093 154.63610982228965z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M756.5069711184353 225.7655047085828L911.4054203744449 273.12271315651236 958.7626288223746 118.22426390050269 803.8641795663649 70.86705545257314z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1246.6022841943932-1.0422401920354716L1142.2590878214821-32.94315672470041 1214.7013676617282 103.30095618087569z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1136.939582343901 337.1076353626647L1136.939582343901 229.30231942733758 1029.134266408574 337.1076353626647z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1478.8716110536168 162.64322486432326L1326.9101809069698 74.71504925624784 1324.2317104573945 228.1645185415478z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1334.659254186331 605.9867226479929L1366.540008102392 455.9995678616192 1216.5528533160182 424.1188139455582 1184.6720993999572 574.105968731932z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1320'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1321'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(36%2c 36%2c 36%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h6{
+    font-size: 2.5rem;
+}
+
+form{
+    padding: 3rem;
+    color: whitesmoke;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}

@@ -65,6 +65,7 @@ label{
 }
 
 .btn{
+    cursor: pointer;
     text-decoration: none;
     font-weight: bold;
     border: none;
